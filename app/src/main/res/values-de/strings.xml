@@ -25,12 +25,12 @@
 
 -->
 <resources>
-    <string name="app_name">RasPi Check</string>
-    <string name="title_activity_main">RasPi Check</string>
-    <string name="title_activity_new_raspi">Pi hinzufügen</string>
+    <string name="app_name">sshCheck</string>
+    <string name="title_activity_main">sshCheck</string>
+    <string name="title_activity_new_raspi">Computer Hinzufügen</string>
     <string name="title_activity_settings">Einstellungen</string>
-    <string name="core_temp">CORE Temperatur</string>
-    <string name="core_freq">CORE Frequenz</string>
+    <string name="core_temp">CPU Temperatur</string>
+    <string name="core_freq">CPU Frequenz</string>
     <string name="arm_freq">ARM Frequenz</string>
     <string name="core_volt">CORE Volt</string>
     <string name="host">Hostname/IP</string>
@@ -52,15 +52,15 @@
     <string name="pref_group_display_settings_title">Display</string>
     <string name="last_update">Letzte Aktualisierung</string>
     <string name="no_device_available">Bitte zuerst einen Pi hinzufügen.</string>
-    <string name="new_raspi_text">Gib hier bitte deine Verbindungsdaten an.</string>
+    <string name="new_raspi_text">Verbindungsdaten angeben.</string>
     <string name="ssh_port">SSH Port</string>
-    <string name="new_raspi_description">Zusätzliche Beschreibung</string>
-    <string name="new_raspi_description_hint">Gib eine zusätzliche Beschreibung hier ein...</string>
-    <string name="overclocking_header">Übertakten</string>
+    <string name="new_raspi_description">Beschreibung</string>
+    <string name="new_raspi_description_hint">Zusätzliche Beschreibung hier ein...</string>
+    <string name="overclocking_header">CPU</string>
     <string name="system_header">System</string>
     <string name="uptime_started">Systemstart</string>
-    <string name="average_load">Auslastung</string>
-    <string name="total_memory">Arbeitsspeicher</string>
+    <string name="average_load">CPU Auslastung</string>
+    <string name="total_memory">RAM</string>
     <string name="free_memory">RAM Frei</string>
     <string name="cpu_serial">Seriennr.</string>
     <string name="ip_addr_label">IP-Adresse</string>
@@ -70,8 +70,8 @@
     <string name="disk_header">Speichernutzung</string>
     <string name="disk_header_avail">Frei</string>
     <string name="disk_header_usedper">Belegt%</string>
-    <string name="please_add_a_raspberry_pi">Bitte füge einen Pi hinzu.</string>
-    <string name="activity_title_edit_raspi">Pi bearbeiten</string>
+    <string name="please_add_a_raspberry_pi">Bitte füge einen Computer hinzu.</string>
+    <string name="activity_title_edit_raspi">Computer bearbeiten</string>
     <string name="disk_header_mounted_on">Mount</string>
     <string name="process_header">Prozesse</string>
     <string name="header_command">Befehl</string>
@@ -95,7 +95,7 @@
     <string name="network_status_down">Aus</string>
     <string name="network_signal">Signal</string>
     <string name="network_link">Qualität</string>
-    <string name="pref_group_about">Über RasPi Check</string>
+    <string name="pref_group_about">Über sshCheck</string>
     <string name="pref_github">Source Code / Fehler</string>
     <string name="pref_dev_email">Entwickler kontaktieren</string>
     <string name="pref_rate_app">App bewerten</string>
@@ -170,16 +170,16 @@
     <!-- ActionButton Strings -->
 
     <string name="action_new">Neu</string>
-    <string name="action_new_raspi">Pi hinzufügen</string>
+    <string name="action_new_raspi">Computer hinzufügen</string>
     <string name="action_new_command">Befehl hinzufügen</string>
     <string name="action_save">Speichern</string>
     <string name="action_save_raspi">Pi Speichern</string>
     <string name="action_save_command">Befehl speichern</string>
     <string name="action_edit">Bearbeiten</string>
-    <string name="action_edit_raspi">Pi Bearbeiten</string>
+    <string name="action_edit_raspi">Computer Bearbeiten</string>
     <string name="action_edit_command">Befehl Bearbeiten</string>
     <string name="action_delete">Entfernen</string>
-    <string name="action_delete_raspi">Pi entfernen</string>
+    <string name="action_delete_raspi">Computer entfernen</string>
     <string name="action_delete_command">Befehl Entfernen</string>
     <string name="action_settings">Einstellungen</string>
     <string name="action_shutdown">Herunterfahren</string>
@@ -206,7 +206,7 @@
     <string name="widget_update_interval_one_day">1 Tag</string>
     <string name="widget_update_interval_custom">Eigenes Intervall</string>
     <string name="widget_update_interval_custom_text">Aktualisierungsintervall (in Minuten)</string>
-    <string name="widget_device_removed">Der Pi zu diesem Widget wurde gelöscht.</string>
+    <string name="widget_device_removed">Der Computer zu diesem Widget wurde gelöscht.</string>
     <string name="widget_auto_update_no">Nein</string>
     <string name="widget_auto_update_wifi">Nur bei WLAN</string>
     <string name="widget_auto_update_yes">Ja</string>
@@ -214,19 +214,19 @@
     <string name="used_memory">Speicherauslastung</string>
     <string name="pref_facebook_summary">Neuigkeiten zu RasPi Check auf Facebook</string>
     <string name="placeholder_non_prompting_date_hint_text">\'%{date(format)}\' - Wird automatisch mit der aktuellen Zeit ersetzt. Format muss ein gültiges Zeit-/Datumsformat sein (z.B. dd.MM.yyyy).</string>
-    <string name="placeholder_non_prompting_pi_hint_text">\'%{pi.property}\' - Wird automatisch mit einer Eigenschaft deines Pis ersetzt. Verfügbare Eigenschaften: name, host, user, pass, port, sudopass.</string>
+    <string name="placeholder_non_prompting_pi_hint_text">\'%{pi.property}\' - Wird automatisch mit einer Eigenschaft deines Computers ersetzt. Verfügbare Eigenschaften: name, host, user, pass, port, sudopass.</string>
     <string name="placeholder_special_hint">Spezielle Platzhalter:</string>
-    <string name="widget_add_no_device">Du musst zuerst einen Pi in der App anlegen.</string>
+    <string name="widget_add_no_device">Du musst zuerst einen Computer in der App anlegen.</string>
     <string name="action_share">Teilen</string>
-    <string name="share_body"># Informationen zu Pi \'%1$s\' - %2$s - %3$s\n\n%4$s\n\nDiese Informationen wurden mit RasPi Check (Version: %5$s) für Android abgefragt.</string>
+    <string name="share_body"># Informationen zu Computer \'%1$s\' - %2$s - %3$s\n\n%4$s\n\nDiese Informationen wurden mit sshCheck (Version: %5$s) für Android abgefragt.</string>
     <string name="permission_private_key_error">Berechtigung zum Lesen des privaten Schlüssels verweigert. Kann Abfrage nicht ausführen.</string>
-    <string name="widget_no_read_permission">RasPi Check hat keine Berechtigung zum Lesen des privaten Schlüssels. Widget kann nicht aktualisiert werden.</string>
+    <string name="widget_no_read_permission">sshCheck hat keine Berechtigung zum Lesen des privaten Schlüssels. Widget kann nicht aktualisiert werden.</string>
 
     <string name="label_cmd_timeout">Timeout in Sekunden</string>
     <string name="timeout_hint_title">Timeout:</string>
     <string name="timeout_hint_text">Passe den Standard Timeout-Wert von 60 Sekunden an, wenn dein Befehl länger zur Durchführung benötigt.</string>
     <string name="validation_msg_timeout">Muss größer als 0 sein.</string>
-    <string name="pref_query_show_system_time_summary">Zeige die Systemzeit deines Pis an.</string>
+    <string name="pref_query_show_system_time_summary">Zeige die Systemzeit deines Computers an.</string>
     <string name="pref_query_show_system_time_summaryOff">Systemzeit wird nicht angezeigt.</string>
     <string name="pref_query_show_system_time_summaryOn">Systemzeit wird angezeigt.</string>
     <string name="pref_query_show_system_time_title">Zeige Systemzeit an</string>
