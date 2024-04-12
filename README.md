@@ -1,39 +1,15 @@
-RasPi Check [![Build Status](https://travis-ci.org/eidottermihi/rpicheck.svg?branch=master)](https://travis-ci.org/eidottermihi/rpicheck)
-========
-
-:construction: Looking for adoption :construction:
-------------
-
-RasPi Check started as a little personal project, from which I've never thought, that it would reach so many Raspberry Pi ® users. However, I no longer have the time (and patience) to keep this project up-2-date and especially to keep up with Google Play Store guidelines and Android API changes.
-
-This being said, **version 1.8.14 is the final release** of RasPi Check (available on [F-Droid](https://f-droid.org/repository/browse/?fdid=de.eidottermihi.raspicheck) and on [GitHub Releases](https://github.com/eidottermihi/rpicheck/releases/tag/v1.8.14)).
-
-If you have experience in maintaining an Android app & would like to take over the (outdated) codebase of RasPi Check, please reach out to me.
-
-RasPi Check
-------------
-
-![RasPi Check Store Graphic](graphics/web_1024_500.jpg)
-
-Android app for checking the status of your Raspberry Pi ® or other SBCs.
-
-The goal of this Android app is to show the user the current system status of a running Raspberry Pi ®.
-
-RasPi Check uses a SSH connection (using [SSHJ](https://github.com/hierynomus/sshj)) to connect to your Raspberry Pi ® and queries the information using Linux utilities like `ps`, `df` or the [`/proc` virtual filesystem](https://www.tldp.org/LDP/Linux-Filesystem-Hierarchy/html/proc.html). This app also works on other SBCs via [fake_vcgencmd](https://github.com/clach04/fake_vcgencmd), e.g. when running [Armbian](https://www.armbian.com).
-
-|   |   |   |
-|---|---|---|
-![01-rpicheck.png](metadata/en-US/phoneScreenshots/01-rpicheck.png) | ![02-rpicheck.png](metadata/en-US/phoneScreenshots/02-rpicheck.png) | ![03-rpicheck.png](metadata/en-US/phoneScreenshots/03-rpicheck.png)
+Forked from Raspi Check[![Build Status](https://travis-ci.org/eidottermihi/rpicheck.svg?branch=master)](https://travis-ci.org/eidottermihi/rpicheck)
 
 
-Download
-------------
 
-<a href="https://f-droid.org/repository/browse/?fdid=de.eidottermihi.raspicheck" target="_blank">
-<img src="https://f-droid.org/badge/get-it-on.png" alt="Get it on F-Droid" height="90"/></a>
+Android app for checking the status of your computers on the local Network.
 
-[GitHub Releases](https://github.com/eidottermihi/rpicheck/releases)
+The goal of this Fork is to slim down the Raspi Check app and allow it to support other computers.
 
+Like RasPi Check, sshCheck uses a SSH connection (using [SSHJ](https://github.com/hierynomus/sshj)) to connect to your Raspberry Pi ® and queries the information using Linux utilities like `ps`, `df` or the [`/proc` virtual filesystem](https://www.tldp.org/LDP/Linux-Filesystem-Hierarchy/html/proc.html). This app also works on other SBCs via [fake_vcgencmd](https://github.com/clach04/fake_vcgencmd), e.g. when running [Armbian](https://www.armbian.com).
+
+
+I have literally never programmed an android app. I just wanted to remove some stuff and make it seem better integrated with other computers.
 
 Copyright Information
 ------------
