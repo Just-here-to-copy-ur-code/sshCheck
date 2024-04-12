@@ -124,10 +124,7 @@ public class MainActivity extends InjectionAppCompatActivity implements
     private TextView coreVoltText;
     @InjectView(R.id.coreTempText)
     private TextView coreTempText;
-    @InjectView(R.id.firmwareText)
-    private TextView firmwareText;
-    @InjectView(R.id.lastUpdateText)
-    private TextView lastUpdateText;
+
     @InjectView(R.id.uptimeText)
     private TextView uptimeText;
     @InjectView(R.id.averageLoadText)
@@ -136,14 +133,12 @@ public class MainActivity extends InjectionAppCompatActivity implements
     private TextView totalMemoryText;
     @InjectView(R.id.totalSwapText)
     private TextView totalSwapText;
-    @InjectView(R.id.cpuSerialText)
-    private TextView serialNoText;
+
     @InjectView(R.id.distriText)
     private TextView distriText;
     @InjectView(R.id.architectureText)
     private TextView architectureText;
-    @InjectView(R.id.modelText)
-    private TextView modelText;
+
     @InjectView(R.id.kernelText)
     private TextView kernelText;
     @InjectView(R.id.systemtimeText)
@@ -242,14 +237,13 @@ public class MainActivity extends InjectionAppCompatActivity implements
         armFreqText.setText("");
         coreFreqText.setText("");
         coreVoltText.setText("");
-        firmwareText.setText("");
+
         uptimeText.setText("");
         averageLoadText.setText("");
         totalMemoryText.setText("");
         totalSwapText.setText("");
         distriText.setText("");
-        serialNoText.setText("");
-        lastUpdateText.setText("");
+
         systemtimeText.setText("");
         // tables
         updateDiskTable(null);
@@ -266,8 +260,8 @@ public class MainActivity extends InjectionAppCompatActivity implements
         armFreqText.setText(FormatHelper.formatFrequency(currentDevice.getLastQueryData().getVcgencmdInfo().getArmFrequency(), freqScale));
         coreFreqText.setText(FormatHelper.formatFrequency(currentDevice.getLastQueryData().getVcgencmdInfo().getCoreFrequency(), freqScale));
         coreVoltText.setText(FormatHelper.formatDecimal(currentDevice.getLastQueryData().getVcgencmdInfo().getCoreVolts()));
-        firmwareText.setText(result.getVcgencmdInfo().getVersion());
-        lastUpdateText.setText(SimpleDateFormat.getDateTimeInstance().format(result.getLastUpdate()));
+
+        
         final boolean showSystemtime = sharedPrefs.getBoolean(SettingsActivity.KEY_PREF_QUERY_SHOW_SYSTEM_TIME, false);
         if (showSystemtime) {
             systemtimeLayout.setVisibility(View.VISIBLE);
@@ -302,11 +296,9 @@ public class MainActivity extends InjectionAppCompatActivity implements
                 result.getErrorMessages().add(result.getMemoryBean().getErrorMessage());
             }
         }
-        serialNoText.setText(result.getSerialNo());
         distriText.setText(result.getDistri());
         kernelText.setText(result.getKernelVer());
         architectureText.setText(result.getArchitecture());
-        modelText.setText(result.getModel());
         // update tables
         updateNetworkTable(result);
         updateDiskTable(result);
