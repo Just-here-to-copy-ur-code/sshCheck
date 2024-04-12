@@ -37,7 +37,7 @@
     <string name="user">Benutzername</string>
     <string name="password">Passwort</string>
     <string name="ssh_credentials">SSH Credentials</string>
-    <string name="no_connection">Bitte WLAN einschalten.</string>
+    <string name="no_connection">Keine Internetverbindung</string>
     <string name="no_hostname_specified">Kein Hostname angegeben. Bitte überprüfe deine Angaben.</string>
     <string name="no_username_specified">Kein Benutzername angegeben. Bitte überprüfe deine Angaben.</string>
     <string name="no_password_specified">Kein Passwort angegeben. Bitte überprüfe deine Angaben.</string>
@@ -51,7 +51,7 @@
     <string name="temperature_scala_summary">Celsius, Fahrenheit</string>
     <string name="pref_group_display_settings_title">Display</string>
     <string name="last_update">Letzte Aktualisierung</string>
-    <string name="no_device_available">Bitte zuerst einen Pi hinzufügen.</string>
+    <string name="no_device_available">Bitte zuerst einen Computer hinzufügen.</string>
     <string name="new_raspi_text">Verbindungsdaten angeben.</string>
     <string name="ssh_port">SSH Port</string>
     <string name="new_raspi_description">Beschreibung</string>
@@ -117,7 +117,7 @@
     <string name="errormessages_dialog_title">Entschuldigung…</string>
     <string name="transport_exception">Die Verbindung wurde unerwartet geschlossen. Probiere es noch einmal.</string>
     <string name="unexpected_exception">Ein unerwarteter Fehler ist aufgetreten. Probiere es noch einmal.</string>
-    <string name="exception_vcgencmd">Das Programm \'vcgencmd\' konnte auf deinem Pi nicht gefunden werden. Stelle sicher, dass es im Verzeichnis \'/usr/bin\' oder \'/opt/vc/bin\' ist und dein SSH Benutzer zur Gruppe \'video\' gehört.</string>
+    <string name="exception_vcgencmd">Das Programm \'vcgencmd\' konnte auf deinem Computer nicht gefunden werden. Stelle sicher, dass es im Verzeichnis \'/usr/bin\' oder \'/opt/vc/bin\' ist und dein SSH Benutzer zur Gruppe \'video\' gehört.</string>
     <string name="weird_exception">Ein unbekannter Fehler ist aufgetreten. Bitte wirf einen Blick in die Logdatei.</string>
     <string name="changelog_full_title">Changelog</string>
     <string name="changelog_title">Was ist neu</string>
@@ -173,7 +173,7 @@
     <string name="action_new_raspi">Computer hinzufügen</string>
     <string name="action_new_command">Befehl hinzufügen</string>
     <string name="action_save">Speichern</string>
-    <string name="action_save_raspi">Pi Speichern</string>
+    <string name="action_save_raspi">Computer Speichern</string>
     <string name="action_save_command">Befehl speichern</string>
     <string name="action_edit">Bearbeiten</string>
     <string name="action_edit_raspi">Computer Bearbeiten</string>
